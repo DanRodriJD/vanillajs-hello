@@ -1,5 +1,96 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
+    background: #0E7E12;
+}
+
+ .card{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid;
     background: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.number {
+   font-size: 80px;
+}
+
+.card.heart:before {
+  content: "♥";
+  font-size: 95px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+}
+.card.heart:after{
+  content: "♥";
+  font-size: 95px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: red;
+}
+
+.card.diamond:before {
+  content: "♦";
+  font-size: 95px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+}
+
+.card.diamond:after {
+  content: "♦";
+  font-size: 95px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: red;
+  transform: rotate(180deg);
+}
+
+.card.spade:before {
+  content: "♠";
+  font-size: 95px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+}
+
+.card.spade:after {
+  content: "♠";
+  font-size: 95px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: black;
+  transform: rotate(180deg);
+}
+
+.card.club:before {
+  content: "♣";
+  font-size: 95px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+}
+
+.card.club:after {
+  content: "♣";
+  font-size: 95px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: black;
+  transform: rotate(180deg);
 }
